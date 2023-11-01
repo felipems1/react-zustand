@@ -41,7 +41,7 @@ $ yarn dev / npm run dev
 5. O servidor será aberto em http://localhost:5173
 ```
 
-## 3 - Rodando os teste:
+## 4 - Rodando os teste:
 
 ```bash
 1. Via terminal com o comando:
