@@ -1,4 +1,4 @@
-<h1 align="center"> React Zustand </h1>
+<h1 align="center"> React Redux </h1>
 
 <div align="center">
   <img src="./public/preview.png" alt="demonstração do projeto" >
@@ -15,7 +15,7 @@ Um pouco das tecnologias que foram utilizadas no projeto:
 - ReactJs
 - TypeScript
 - Tailwind CSS
-- Zustand
+- Redux / Redux Toolkit
 - Axios
 - Json-Server
 
@@ -27,7 +27,7 @@ Você precisa ter o [Node](https://nodejs.org/en/), o [Git](https://git-scm.com/
 
 ```bash
 1. Clone o repositório:
-$ git clone https://github.com/felipems1/react-zustand.git
+$ git clone https://github.com/felipems1/react-redux.git
 
 2. Acesse a pasta e instale as dependências via terminal:
 $ yarn install / npm install
