@@ -28,7 +28,7 @@ Você precisa ter o [Node](https://nodejs.org/en/), o [Git](https://git-scm.com/
 
 ```bash
 1. Clone o repositório:
-$ git clone https://github.com/felipems1/react-zustand.git
+$ git clone https://github.com/felipems1/react-zustand-redux.git
 
 2. Acesse a pasta e instale as dependências via terminal:
 $ yarn install / npm install
