@@ -18,6 +18,7 @@ Um pouco das tecnologias que foram utilizadas no projeto:
 - Redux / Redux Toolkit
 - Axios
 - Json-Server
+- Vitest
 
 ---
 
@@ -48,4 +49,4 @@ $ yarn dev / npm run dev
 $ yarn test / npm run test
 ```
 
-<p align="center">Projeto feito com ❤️ por <a href="https://www.linkedin.com/in/felipems12/">Felipe Moises</a></p>
+<p align="center">Projeto feito com ❤️ por <a href="https://www.linkedin.com/in/felipems1/">Felipe Moises</a></p>
