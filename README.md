@@ -18,6 +18,7 @@ Um pouco das tecnologias que foram utilizadas no projeto:
 - Zustand
 - Axios
 - Json-Server
+- Vitest
 
 ---
 
