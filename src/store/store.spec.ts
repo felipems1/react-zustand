@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from 'vitest'
-import { useStore as store} from '.'
+import { useStore as store } from '.'
 
 const course = {
   id: 1,
@@ -26,7 +26,7 @@ const course = {
 const initialState = store.getState()
 
 describe('zustand store', () => {
-  beforeEach(()=>{
+  beforeEach(() => {
     store.setState(initialState)
   })
 
@@ -38,7 +38,7 @@ describe('zustand store', () => {
     const { currentModuleIndex, currentLessonIndex } = store.getState()
 
     expect(currentModuleIndex).toEqual(1)
-    expect(currentLessonIndex).toEqual(2)  
+    expect(currentLessonIndex).toEqual(2)
   })
 
   it('should be able to play next video automatically', () => {
@@ -51,7 +51,7 @@ describe('zustand store', () => {
     const { currentLessonIndex, currentModuleIndex } = store.getState()
 
     expect(currentModuleIndex).toEqual(0)
-    expect(currentLessonIndex).toEqual(1)  
+    expect(currentLessonIndex).toEqual(1)
   })
 
   it('should be able to jump to the next module automatically', () => {
@@ -66,7 +66,7 @@ describe('zustand store', () => {
     const { currentLessonIndex, currentModuleIndex } = store.getState()
 
     expect(currentModuleIndex).toEqual(1)
-    expect(currentLessonIndex).toEqual(0)  
+    expect(currentLessonIndex).toEqual(0)
   })
 
   it('should not update the current module and lesson index if there is no next lesson available', () => {
@@ -74,9 +74,9 @@ describe('zustand store', () => {
 
     const { next } = store.getState()
 
-    store.setState({ 
-      currentLessonIndex: 1, 
-      currentModuleIndex: 1 
+    store.setState({
+      currentLessonIndex: 1,
+      currentModuleIndex: 1,
     })
 
     next()
@@ -84,6 +84,6 @@ describe('zustand store', () => {
     const { currentLessonIndex, currentModuleIndex } = store.getState()
 
     expect(currentModuleIndex).toEqual(1)
-    expect(currentLessonIndex).toEqual(1)  
+    expect(currentLessonIndex).toEqual(1)
   })
 })

@@ -1,5 +1,5 @@
-import { create } from "zustand";
-import { api } from "../lib/axios";
+import { create } from 'zustand'
+import { api } from '../lib/axios'
 
 interface Course {
   id: number
@@ -39,7 +39,7 @@ export const useStore = create<PlayerState>((set, get) => {
 
       set({
         course: response.data,
-        isLoading: false
+        isLoading: false,
       })
     },
 
@@ -48,20 +48,20 @@ export const useStore = create<PlayerState>((set, get) => {
 
       set({
         currentModuleIndex: moduleIndex,
-        currentLessonIndex: lessonIndex
+        currentLessonIndex: lessonIndex,
       })
-
     },
 
     next: () => {
       const { currentLessonIndex, currentModuleIndex, course } = get()
 
       const nextLessonIndex = currentLessonIndex + 1
-      const nextLesson = course?.modules[currentModuleIndex].lessons[nextLessonIndex]
+      const nextLesson =
+        course?.modules[currentModuleIndex].lessons[nextLessonIndex]
 
       if (nextLesson) {
         set({
-          currentLessonIndex: nextLessonIndex
+          currentLessonIndex: nextLessonIndex,
         })
       } else {
         const nextModuleIndex = currentModuleIndex + 1
@@ -74,17 +74,16 @@ export const useStore = create<PlayerState>((set, get) => {
           })
         }
       }
-    }
+    },
   }
 })
 
 export const useCurrentLesson = () => {
-  return useStore(state => {
+  return useStore((state) => {
     const { currentModuleIndex, currentLessonIndex } = state
 
     const currentModule = state.course?.modules[currentModuleIndex]
-    const currentLesson = 
-    currentModule?.lessons[currentLessonIndex]
+    const currentLesson = currentModule?.lessons[currentLessonIndex]
 
     return { currentLesson, currentModule }
   })
