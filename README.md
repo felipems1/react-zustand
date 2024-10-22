@@ -1,14 +1,4 @@
-<h1 align="center"> React Zustand </h1>
-
-<div align="center">
-  <img src="./public/preview.png" alt="demonstração do projeto" >
-</div>
-
-## 1 - Sobre
-
-Plataforma de vídeo aula.
-
-## 2 - Tecnologias
+## 1 - Tecnologias
 
 Um pouco das tecnologias que foram utilizadas no projeto:
 
@@ -22,7 +12,7 @@ Um pouco das tecnologias que foram utilizadas no projeto:
 
 ---
 
-## 3 - Rodando o projeto:
+## 2 - Rodando o projeto:
 
 Você precisa ter o [Node](https://nodejs.org/en/), o [Git](https://git-scm.com/) e algum gerenciador de pacotes([NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) | [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)) instalados em sua máquina.
 
@@ -42,7 +32,7 @@ $ yarn dev / npm run dev
 5. O servidor será aberto em http://localhost:5173
 ```
 
-## 4 - Rodando os teste:
+## 3 - Rodando os teste:
 
 ```bash
 1. Via terminal com o comando:
