@@ -1,42 +1,43 @@
-## 1 - Tecnologias
+# React Zustand Redux: Plataforma de Vídeo Aulas
 
-Um pouco das tecnologias que foram utilizadas no projeto:
+Este projeto é uma aplicação de estudo focada no aprendizado de Zustand, Redux e testes.  A aplicação simula uma plataforma de vídeo aulas.
 
-- ReactJs
-- TypeScript
-- Tailwind CSS
-- Zustand
-- Axios
-- Json-Server
-- Vitest
+## Tecnologias Utilizadas
 
----
+* React
+* TypeScript
+* Tailwind CSS
+* Zustand
+* Redux / Redux Toolkit
+* Axios
+* Json-Server
+* Vitest
 
-## 2 - Rodando o projeto:
+## Passos para Instalação
 
-Você precisa ter o [Node](https://nodejs.org/en/), o [Git](https://git-scm.com/) e algum gerenciador de pacotes([NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/) | [Yarn](https://classic.yarnpkg.com/lang/en/docs/install)) instalados em sua máquina.
+1. Clone o repositório: `git clone <URL_DO_REPOSITORIO>`
+2. Navegue até o diretório do projeto: `cd <nome_do_diretorio>`
+3. Instale as dependências: `npm install`
 
-```bash
-1. Clone o repositório:
-$ git clone https://github.com/felipems1/react-zustand-redux.git
+## Como Usar
 
-2. Acesse a pasta e instale as dependências via terminal:
-$ yarn install / npm install
+1. Execute o servidor JSON: `npm run server` (Este comando inicia um servidor mock com dados para as aulas, normalmente usando Json-Server)
+2. Execute a aplicação: `npm run dev`
+3. Acesse a aplicação em: `http://localhost:5173`
 
-3. Inicie o servidor da aplicação:
-$ yarn server / npm run server
+## Funcionalidades Principais
 
-4. Inicie a aplicação em modo de desenvolvimento:
-$ yarn dev / npm run dev
+* Reproduzir vídeo aulas.
+* Separar vídeo aulas por módulos.
 
-5. O servidor será aberto em http://localhost:5173
-```
+## Testes Automatizados
 
-## 3 - Rodando os teste:
+Execute `npm run test` para rodar os testes da aplicação utilizando Vitest.
 
-```bash
-1. Via terminal com o comando:
-$ yarn test / npm run test
-```
+## Licença
 
-<p align="center">Projeto feito com ❤️ por <a href="https://www.linkedin.com/in/felipems12/">Felipe Moises</a></p>
+MIT
+
+## Contato
+
+[Meu Linkedin](https://www.linkedin.com/in/felipems1/)
